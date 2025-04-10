@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subida de nota</title>
     <link rel = "stylesheet" href="./CSS/style.css">
+    <script src="../JS/script.JS"></script>
 </head>
 <body id = "body">
-    <script src=""../JS/script.JS"></script>
+  
     <header class="Cabecero"></header>
     <section class="cabecero__imagen">
         
@@ -25,21 +26,21 @@
     </nav>
     </body>
     <main class = "imagenes">
-        <a href="mailto:pablotorreservan@gmail.com">
-            <img src = "../Assets/Gmail.jpg" class="imagenes__gmail">
-        </a>
-
-        <a href="https://github.com/eltorres17" target="_blank">
-            <img src = "../Assets/Github.png" class="imagenes__github">
-        </a>
-
-        <a href="" target="_blank">
-            <img src = "../Assets/telefono.jpg" class="imagenes__telefono">
-        </a>
-    </main>
-    <footer class="Formulario">
+        <section>
+            <a href="mailto:prueba@gmail.com"> 
+                <img src = "../Assets/Gmail.jpg" class="imagenes__gmail">
+            </a>
+    
+            <a href="https://github.com/eltorres17" target="_blank">
+                <img src = "../Assets/Github.png" class="imagenes__github">
+            </a>
+    
+            <a href="tel:+666666666" target="_blank">
+                <img src = "../Assets/telefono.jpg" class="imagenes__telefono">
+            </a>
+        </section>
         <form class="email">
-            <h2>Enviar email</h2>
+            <h2>Contactame si estás interesado</h2>
 
             <label class="email__nombre">Nombre</label>
             <input type="text" class="email__nombre__texto" placeholder="Nombre">
@@ -51,12 +52,11 @@
             <input type="text" class="email__asunto__texto" placeholder="Asunto">
 
             <label class="email__mensaje">Mensaje</label>
-            <input type="text" class="email__mensaje__texto" placeholder="Mensaje">
+            <textarea class="email__mensaje__texto" placeholder="Mensaje"> </textarea>
 
             <button type="submit" class="email__boton">Enviar</button>
         </form>
-    </footer>
-    
+    </main>
     
 </body>
 </html>

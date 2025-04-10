@@ -5,34 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subida de nota</title>
     <link rel = "stylesheet" href="./CSS/style.css">
+    <script src="../JS/script.JS" defer></script>
 </head>
 <body id = "body">
-    <script src="../JS/script.JS"></script>
-    <header class="Cabecero"></header>
-    <section class="cabecero__imagen">
-        
-    </section>
-    <nav class="cabecero__menu">
-        <ul>
-            <li><a class="cabecero__menu__enlace" href="">Home</a></li>
-            <li><a class="cabecero__menu__enlace" href="./HTML/About_me.HTML">Sobre mi</a></li>
-            <li><a class="cabecero__menu__enlace" href="./HTML/Contact_me.HTML">Contacto</a></li>
-            <li><a class="cabecero__menu__enlace" href="./HTML/Profolio.HTML">Portfolio</a></li>
-            <li><a class="cabecero__menu__oscuro">
-                <img src = "./Assets/modo-oscuro.png" class ="cabecero__menu__oscuro">
-            </a></li>
-        </ul>
-    </nav>
-    </body>
+   
+    <header class="Cabecero">
+        <nav class="cabecero__menu">
+            <ul>
+                <li><a class="cabecero__menu__enlace" href="">Home</a></li>
+                <li><a class="cabecero__menu__enlace" href="./HTML/About_me.HTML">Sobre mi</a></li>
+                <li><a class="cabecero__menu__enlace" href="./HTML/Contact_me.HTML">Contacto</a></li>
+                <li><a class="cabecero__menu__enlace" href="./HTML/Profolio.HTML">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <h1 class ="main__texto">Texto de prueba</h1>
-        <img src="./Assets/aficción 1.png" class="main__imagen">
-        <p class ="main__imagen__texto">Futbol</p>
-
-        <img src="./Assets/Foto perfil.png" class ="main__imagen">
-        <p class ="main__imagen__texto">Pablo Torres Serván</p>
+        <section class="cabecero__imagen">
+            <a class="cabecero__menu__oscuro">
+                <img src = "./Assets/modo-oscuro.png" class ="cabecero__menu__oscuro">
+            </a>
+        </section>
+        <section>
+            <article>
+                <h1 class ="main__imagen__texto">Pablo Torres Serván</p>
+                <p>Texto descriptivo</p>
+            </article>
+            <figure>
+                <img src="./Assets/Foto perfil.png" class ="main__imagen">
+                <figcaption>
+                    <p>Pablo Torres</p>
+                </figcaption>
+            </figure>
+        </section>
+       <section>
+            <img src="./Assets/aficción 1.png" class="main__imagen">
+            <article>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+         
+       </section>      
     </main>
-    
-    
 </body>
 </html>
