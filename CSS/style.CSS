@@ -128,7 +128,6 @@
   }
   
   .main__imagen {
-    background-color: white;
     border: 1px solid #ccc;
     display: flex;
     align-content: center;
@@ -173,7 +172,6 @@
     display: flex;
     flex-direction: column;
     margin: 11rem;
-    background-color: aliceblue;
   }
 
   .main__texto{
@@ -292,3 +290,22 @@
   .imagenes{
     margin-left: 10rem;
   }
+
+  /* Modo oscuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header.Cabecero.dark-mode {
+  background-color: #1e1e1e;
+}
+
+.cabecero__menu__enlace a.dark-mode {
+  color: #ffffff;
+}
+
+.cabecero__menu__enlace a.dark-mode:hover {
+  color: #1e1e1e;
+  background-color: #85f5d9;
+}

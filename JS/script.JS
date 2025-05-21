@@ -54,3 +54,26 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+// --- Modo oscuro --- //
+document.addEventListener("DOMContentLoaded", () => {
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    // Alternar modo oscuro
+    darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+
+        // Guardar preferencia en localStorage
+        if (body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    });
+
+    // Aplicar preferencia guardada
+    if (localStorage.getItem("darkMode") === "enabled") {
+        body.classList.add("dark-mode");
+    }
+});
